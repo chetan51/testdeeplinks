@@ -15,9 +15,11 @@
 		616A3ADC23A97895000E47DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616A3ADA23A97895000E47DB /* LaunchScreen.storyboard */; };
 		616A3ADF23A97895000E47DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616A3ADE23A97895000E47DB /* main.m */; };
 		616A3AE823A978FC000E47DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 616A3AE723A978FC000E47DB /* GoogleService-Info.plist */; };
+		EACD2C4E780FF2AC55CDE338 /* Pods_testdeeplinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4E81D6E6AABF7A537D55C4 /* Pods_testdeeplinks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdeeplinks.release.xcconfig"; path = "Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks.release.xcconfig"; sourceTree = "<group>"; };
 		616A3AC923A97891000E47DB /* testdeeplinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testdeeplinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616A3ACC23A97891000E47DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		616A3ACD23A97891000E47DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +33,8 @@
 		616A3ADD23A97895000E47DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		616A3ADE23A97895000E47DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		616A3AE723A978FC000E47DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A59FF1A6016DDABFA98E8F0E /* Pods-testdeeplinks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdeeplinks.debug.xcconfig"; path = "Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4E81D6E6AABF7A537D55C4 /* Pods_testdeeplinks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testdeeplinks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +42,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACD2C4E780FF2AC55CDE338 /* Pods_testdeeplinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51EAF470B452AB069A79ED9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E81D6E6AABF7A537D55C4 /* Pods_testdeeplinks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		616A3AC023A97891000E47DB = {
 			isa = PBXGroup;
 			children = (
 				616A3ACB23A97891000E47DB /* testdeeplinks */,
 				616A3ACA23A97891000E47DB /* Products */,
+				B58474CC2977D9F8A13E0D6E /* Pods */,
+				51EAF470B452AB069A79ED9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,16 @@
 			path = testdeeplinks;
 			sourceTree = "<group>";
 		};
+		B58474CC2977D9F8A13E0D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59FF1A6016DDABFA98E8F0E /* Pods-testdeeplinks.debug.xcconfig */,
+				3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 616A3AE223A97895000E47DB /* Build configuration list for PBXNativeTarget "testdeeplinks" */;
 			buildPhases = (
+				8979C9BA657C989EED1667A4 /* [CP] Check Pods Manifest.lock */,
 				616A3AC523A97891000E47DB /* Sources */,
 				616A3AC623A97891000E47DB /* Frameworks */,
 				616A3AC723A97891000E47DB /* Resources */,
+				68A38BFB19F007FCE42A5D46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68A38BFB19F007FCE42A5D46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8979C9BA657C989EED1667A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testdeeplinks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		616A3AC523A97891000E47DB /* Sources */ = {
@@ -291,6 +360,7 @@
 		};
 		616A3AE323A97895000E47DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59FF1A6016DDABFA98E8F0E /* Pods-testdeeplinks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +378,7 @@
 		};
 		616A3AE423A97895000E47DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
