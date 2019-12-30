@@ -18,8 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIROptions defaultOptions].deepLinkURLScheme = @"topmix";
     [FIRApp configure];
     [FIRDynamicLinks performDiagnosticsWithCompletion:nil];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    NSLog(@"URL opened");
     return YES;
 }
 

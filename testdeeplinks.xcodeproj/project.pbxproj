@@ -367,6 +367,7 @@
 				CODE_SIGN_ENTITLEMENTS = testdeeplinks/testdeeplinks.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6W64ERMC79;
 				INFOPLIST_FILE = testdeeplinks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -374,6 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.dnart.testdeeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -389,6 +391,7 @@
 				CODE_SIGN_ENTITLEMENTS = testdeeplinks/testdeeplinks.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6W64ERMC79;
 				INFOPLIST_FILE = testdeeplinks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -396,6 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.dnart.testdeeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
