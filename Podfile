@@ -8,5 +8,6 @@ target 'testdeeplinks' do
   # Pods for testdeeplinks
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
+  pod 'Firebase/DynamicLinks'
 
 end

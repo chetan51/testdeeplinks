@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testdeeplinks.release.xcconfig"; path = "Target Support Files/Pods-testdeeplinks/Pods-testdeeplinks.release.xcconfig"; sourceTree = "<group>"; };
+		610D781A23A97C6600D03327 /* testdeeplinks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testdeeplinks.entitlements; sourceTree = "<group>"; };
 		616A3AC923A97891000E47DB /* testdeeplinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testdeeplinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		616A3ACC23A97891000E47DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		616A3ACD23A97891000E47DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		616A3ACB23A97891000E47DB /* testdeeplinks */ = {
 			isa = PBXGroup;
 			children = (
+				610D781A23A97C6600D03327 /* testdeeplinks.entitlements */,
 				616A3ACC23A97891000E47DB /* AppDelegate.h */,
 				616A3ACD23A97891000E47DB /* AppDelegate.m */,
 				616A3ACF23A97891000E47DB /* SceneDelegate.h */,
@@ -100,7 +102,6 @@
 				A59FF1A6016DDABFA98E8F0E /* Pods-testdeeplinks.debug.xcconfig */,
 				3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -363,15 +364,19 @@
 			baseConfigurationReference = A59FF1A6016DDABFA98E8F0E /* Pods-testdeeplinks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testdeeplinks/testdeeplinks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W64ERMC79;
 				INFOPLIST_FILE = testdeeplinks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.dnart.testdeeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,15 +386,19 @@
 			baseConfigurationReference = 3670D156691465D07E488917 /* Pods-testdeeplinks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testdeeplinks/testdeeplinks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W64ERMC79;
 				INFOPLIST_FILE = testdeeplinks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.dnart.testdeeplinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
